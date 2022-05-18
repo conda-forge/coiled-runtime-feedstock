@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 build:
-  number: 0
+  number: 1
   noarch: generic
 
 requirements:
   run:
-    - python >=3.7
+    - python >=3.7,<3.10
     - pip
     - coiled
     - nodejs ==17.8.0
