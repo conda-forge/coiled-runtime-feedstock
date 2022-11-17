@@ -1,5 +1,5 @@
 {% set name = "coiled-runtime" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ requirements:
   run:
     - python >=3.8,<3.11
     - pip
-    - coiled
+    - coiled >=0.2.41
     - numpy ==1.21.6
     - pandas ==1.4.2
     - dask ==2022.6.0
@@ -41,6 +41,7 @@ requirements:
     - xgboost ==1.6.1
     - dask-ml ==2022.5.27
     - openssl >1.1.0g
+    - bokeh ==2.4.3
 
 test:
   imports:
